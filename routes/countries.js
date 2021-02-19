@@ -4,7 +4,6 @@ var MongoClient = require('mongodb').MongoClient;
 const { DB_URL, DB_NAME } = require('../constants');
 const auth = require('../auth');
 
-
 router.get('/getCountries', (req, res, next) => {
   MongoClient.connect(DB_URL, { useNewUrlParser: true }, (err, db) => {
     if (err) throw err;
@@ -18,7 +17,7 @@ router.get('/getCountries', (req, res, next) => {
 });
 
 router.post('/addCountry', auth.requiresAdmin, (req, res) => {
-  console.log(JSON.stringify(req.body));
+  //console.log(JSON.stringify(req.body));
   MongoClient.connect(DB_URL, { useNewUrlParser: true }, (err, db) => {
     if (err) throw err;
     const dbo = db.db(DB_NAME);
