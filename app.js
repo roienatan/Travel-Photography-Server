@@ -12,7 +12,7 @@ var imagesRouter = require('./routes/images');
 var app = express();
 
 // view engine setup
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'jade');
 
 const allowCrossDomain = function (req, res, next) {
@@ -28,7 +28,7 @@ app.use(allowCrossDomain);
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + './public/index.html'));
+  res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 app.use('/', indexRouter);
