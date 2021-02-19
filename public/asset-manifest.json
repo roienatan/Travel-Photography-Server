@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.92ff52b5.chunk.css",
+    "main.js": "/static/js/main.a718e106.chunk.js",
+    "main.js.map": "/static/js/main.a718e106.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/js/2.2c831f9c.chunk.js": "/static/js/2.2c831f9c.chunk.js",
+    "static/js/2.2c831f9c.chunk.js.map": "/static/js/2.2c831f9c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ff2381b2e66f5448033a64efa71c1270.js": "/precache-manifest.ff2381b2e66f5448033a64efa71c1270.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.92ff52b5.chunk.css.map": "/static/css/main.92ff52b5.chunk.css.map",
+    "static/js/2.2c831f9c.chunk.js.LICENSE.txt": "/static/js/2.2c831f9c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/BluuNext-Bold.62617b94.otf",
+    "static/media/loading.svg": "/static/media/loading.f0db446d.svg",
+    "static/media/roie-natan.png": "/static/media/roie-natan.dcfa3647.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/js/2.2c831f9c.chunk.js",
+    "static/css/main.92ff52b5.chunk.css",
+    "static/js/main.a718e106.chunk.js"
+  ]
+}
