@@ -34,9 +34,13 @@ app.use('/authenticate', loginRouter);
 app.use('/countries', countriesRouter);
 app.use('/images', imagesRouter);
 
-app.all('/*', function(req, res) { 
-  res.sendFile('public/index.html'); 
-});
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
