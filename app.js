@@ -27,15 +27,7 @@ app.use(express.json());
 app.use(allowCrossDomain);
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-//app.use(express.static(path.join(__dirname, 'public')));
-
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
+app.use(express.static(path.join(__dirname, 'public/index.html')));
 
 app.use('/', indexRouter);
 app.use('/authenticate', loginRouter);
